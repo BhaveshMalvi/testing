@@ -10,7 +10,7 @@ const Admin = lazy(() => import('./Pages/Admin'));
 
 function App() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div>Loading......by bhavesh</div>}>
       <TopNavbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
