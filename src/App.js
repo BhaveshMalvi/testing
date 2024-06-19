@@ -10,18 +10,15 @@ const Admin = lazy(() => import('./Pages/Admin'));
 
 function App() {
   return (
-    <>
-      <Suspense fallback={<div>Loading...</div>}>
-        <h1>he</h1>
-        <TopNavbar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/admin" element={<Admin />} />
-        </Routes>
-      </Suspense>
-    </>
+    <Suspense fallback={<div>Loading......by bhavesh</div>}>
+      <TopNavbar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/admin" element={<Admin />} />
+      </Routes>
+    </Suspense>
   );
 }
 
